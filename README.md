@@ -32,7 +32,7 @@ Setelah itu, kami melakukan ncat untuk memasukan jawaban yang kami temukan untuk
 __Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!__
  
 
-![Teks alternatif](https://i.ibb.co/hcYLFVH/Whats-App-Image-2023-09-22-at-6-06-35-PM.jpg)
+![Teks alternatif](https://i.ibb.co/2M4zXtn/image.png)
 
 a. Untuk mengetahui server yang dijalankan, kami menggunakan curl -I http://10.21.78.111:8080, Ini akan meminta server untuk mengirimkan informasi header dari respons yang akan diterima seperti pada gambar. Ini termasuk status respons (seperti 200 OK atau 404 Not Found), tipe konten, tanggal, dan informasi header lainnya.
 
@@ -65,10 +65,10 @@ __Berapa jumlah packet yang menuju IP 184.87.193.88?__
 
 a. Buka di wireshark bagian filter dan ketik ip.dst == 184.87.193.88, tujuannya filter di Wireshark yang digunakan untuk menampilkan hanya paket-paket yang memiliki alamat tujuan  ke 184.87.193.88 dan ditampilkan 6 paket
 
-![Teks alternatif](https://i.ibb.co/jHvpN90/image.png)
+![Teks alternatif](https://i.ibb.co/rHnLbGT/image.png)
 b. Lalu untuk menemukan flag ketik nc 10.21.78.111 6565, dan masukkan 6 lalu muncul flag
 
-![Teks alternatif](https://i.ibb.co/mFJNwFc/image.png)
+![Teks alternatif](https://i.ibb.co/FB1qs9m/image.png)
 
 ### Soal 8
 Pada soal ini, kami diminta untuk memberikan query filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80 dan jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad.
@@ -80,7 +80,7 @@ Untuk menyelesaikan soal ini, kami langsung melakukan ncat untuk memasukkan jawa
 ### Soal 9
 __Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!__
 
-![Teks alternatif](https://i.ibb.co/tZvJMbj/image.png)
+![Teks alternatif](https://i.ibb.co/vkzN09x/image.png)
 
 a. Untuk menemukan flag, ketik nc 10.21.78.111 7272
 
@@ -97,13 +97,13 @@ __Buka wireshark, dan filter dengan telnet di wireshark__
 a. Buka wireshark, dan filter dengan telnet di wireshark
 
 
-![Teks alternatif](https://i.ibb.co/tpZRCQk/image.png)
+![Teks alternatif](https://i.ibb.co/TW1pj73/image.png)
 
 b. Coba satu-satu dan cari dan ditemukan dengan username:password yaitu dhafin:kesayangannyak0k0
 
-![Teks alternatif](https://i.ibb.co/Y7Gr3qg/image.png)
+![Teks alternatif](https://i.ibb.co/4YjmSZs/image.png)
 
 c. Lalu masukkan nc 10.21.78.111 7373 untuk mendapatkan flag
 
-![Teks alternatif](https://i.ibb.co/6v4LqVX/image.png)
-)
+![Teks alternatif](https://i.ibb.co/FxC8ZbN/image.png)
+
