@@ -29,6 +29,16 @@ Setelah itu, kami melakukan ncat untuk memasukan jawaban yang kami temukan untuk
 ![Alt Text](https://i.ibb.co/vJNVKQ5/soal-1-nc.jpg)
 
 ### Soal 2
+__Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!__
+ 
+
+![Teks alternatif](https://i.ibb.co/hcYLFVH/Whats-App-Image-2023-09-22-at-6-06-35-PM.jpg)
+
+a. Untuk mengetahui server yang dijalankan, kami menggunakan curl -I http://10.21.78.111:8080, Ini akan meminta server untuk mengirimkan informasi header dari respons yang akan diterima seperti pada gambar. Ini termasuk status respons (seperti 200 OK atau 404 Not Found), tipe konten, tanggal, dan informasi header lainnya.
+
+b. Lalu server diperlihatkan gunicorn.
+
+c. Untuk mendapatkan flag, ketik nc 10.21.78.111 13579, lalu masukkan gunicorn setelah itu muncul flag yang diinginkan.
 
 ### Soal 3
 Pada soal ini, kami diminta untuk mencari tahu berapa banyak paket yang tercapture dengan IP source maupun destination address 239.255.255.250 dengan port 3702 dan protokol layer transport apa yang digunakan.
@@ -51,6 +61,14 @@ Selanjutnya, kami melakukan ncat untuk memasukkan jawaban tersebut dan berhasil 
 ![Alt Text](https://i.ibb.co/XZfJ8NH/soal-4-nc.jpg)
 
 ### Soal 7
+__Berapa jumlah packet yang menuju IP 184.87.193.88?__
+
+a. Buka di wireshark bagian filter dan ketik ip.dst == 184.87.193.88, tujuannya filter di Wireshark yang digunakan untuk menampilkan hanya paket-paket yang memiliki alamat tujuan  ke 184.87.193.88 dan ditampilkan 6 paket
+
+![Teks alternatif](https://i.ibb.co/jHvpN90/image.png)
+b. Lalu untuk menemukan flag ketik nc 10.21.78.111 6565, dan masukkan 6 lalu muncul flag
+
+![Teks alternatif](https://i.ibb.co/mFJNwFc/image.png)
 
 ### Soal 8
 Pada soal ini, kami diminta untuk memberikan query filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80 dan jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad.
@@ -60,5 +78,32 @@ Untuk menyelesaikan soal ini, kami langsung melakukan ncat untuk memasukkan jawa
 ![Alt Text](https://i.ibb.co/CJBjn2v/soal-8.jpg)
 
 ### Soal 9
+__Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!__
+
+![Teks alternatif](https://i.ibb.co/tZvJMbj/image.png)
+
+a. Untuk menemukan flag, ketik nc 10.21.78.111 7272
+
+b. Lalu masukkan ip.src == 10.51.40.1 && ip.dst != 10.39.55.34 untuk:
+
+- Filter ini membatasi tampilan hanya pada paket-paket yang berasal dari alamat IP 10.51.40.1.Jika paket yang sedang ditangkap memiliki alamat sumber yang bukan 10.51.40.1, paket tersebut tidak akan muncul dalam hasil tampilan
+- Filter ini memastikan bahwa paket-paket yang memiliki alamat tujuan (destination address) kecuali 10.39.55.34 akan ditampilkan.Jika paket yang sedang ditangkap memiliki alamat tujuan ke 10.39.55.34, maka paket tersebut tidak akan muncul dalam hasil tampilan.
+e. Setelah itu, akan keluar flag nya
+
 
 ### Soal 10
+__Buka wireshark, dan filter dengan telnet di wireshark__
+
+a. Buka wireshark, dan filter dengan telnet di wireshark
+
+
+![Teks alternatif](https://i.ibb.co/tpZRCQk/image.png)
+
+b. Coba satu-satu dan cari dan ditemukan dengan username:password yaitu dhafin:kesayangannyak0k0
+
+![Teks alternatif](https://i.ibb.co/Y7Gr3qg/image.png)
+
+c. Lalu masukkan nc 10.21.78.111 7373 untuk mendapatkan flag
+
+![Teks alternatif](https://i.ibb.co/6v4LqVX/image.png)
+)
