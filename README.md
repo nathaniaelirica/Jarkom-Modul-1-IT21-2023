@@ -66,6 +66,7 @@ __Berapa jumlah packet yang menuju IP 184.87.193.88?__
 a. Buka di wireshark bagian filter dan ketik ip.dst == 184.87.193.88, tujuannya filter di Wireshark yang digunakan untuk menampilkan hanya paket-paket yang memiliki alamat tujuan  ke 184.87.193.88 dan ditampilkan 6 paket
 
 ![Teks alternatif](https://i.ibb.co/rHnLbGT/image.png)
+
 b. Lalu untuk menemukan flag ketik nc 10.21.78.111 6565, dan masukkan 6 lalu muncul flag
 
 ![Teks alternatif](https://i.ibb.co/FB1qs9m/image.png)
